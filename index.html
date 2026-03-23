@@ -192,38 +192,6 @@
       max-width:58ch;
       color:var(--text);
     }
-    .hero-meta{
-      margin-top:26px;
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:12px;
-    }
-    .meta-card{
-      border-radius:18px;
-      background:rgba(255,255,255,.72);
-      border:1px solid rgba(18,33,49,.08);
-      padding:14px;
-      min-height:104px;
-    }
-    .meta-card i{
-      width:18px;
-      height:18px;
-      color:var(--primary-dark);
-      margin-bottom:10px;
-    }
-    .meta-card strong{
-      display:block;
-      color:var(--ink);
-      font-weight:900;
-      font-size:14px;
-      margin-bottom:6px;
-    }
-    .meta-card span{
-      display:block;
-      font-size:13px;
-      line-height:1.55;
-      color:var(--text);
-    }
 
     .hero-visual{
       display:flex;
@@ -244,41 +212,7 @@
       display:block;
       border-radius:20px;
     }
-    .seal{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:16px 18px;
-      border-radius:18px;
-      background:linear-gradient(180deg, rgba(123,148,173,.12), rgba(255,255,255,.88));
-      border:1px solid rgba(18,33,49,.08);
-    }
-    .seal strong{
-      display:block;
-      color:var(--ink);
-      font-size:14px;
-      font-weight:900;
-      margin-bottom:4px;
-    }
-    .seal p{
-      margin:0;
-      font-size:13px;
-      line-height:1.55;
-    }
-    .seal-badge{
-      display:grid;
-      place-items:center;
-      width:54px;
-      height:54px;
-      flex:0 0 auto;
-      border-radius:16px;
-      color:#fff;
-      background:linear-gradient(180deg, var(--primary), var(--primary-dark));
-      box-shadow:var(--shadow-soft);
-    }
 
-    .quick-summary,
     .section-shell{
       margin-top:22px;
       background:linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.62));
@@ -287,95 +221,8 @@
       box-shadow:var(--shadow-soft);
       overflow:hidden;
     }
-    .section-head{
-      padding:22px 24px;
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:18px;
-      border-bottom:1px solid var(--line-2);
-      background:linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.50));
-    }
-    .section-head h2{
-      margin:0;
-      color:var(--ink);
-      font-size:24px;
-      font-weight:900;
-      letter-spacing:-.03em;
-    }
-    .section-head p{
-      margin:6px 0 0;
-      max-width:62ch;
-      font-size:14px;
-      line-height:1.7;
-      color:var(--text);
-    }
-    .section-kicker{
-      white-space:nowrap;
-      padding:10px 14px;
-      border-radius:999px;
-      background:rgba(255,255,255,.78);
-      border:1px solid rgba(18,33,49,.08);
-      color:var(--ink);
-      font-size:12px;
-      font-weight:900;
-      letter-spacing:.04em;
-      text-transform:uppercase;
-    }
-
-    .summary-grid{
-      padding:24px;
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:14px;
-    }
-    .summary-item{
-      background:rgba(255,255,255,.80);
-      border:1px solid rgba(18,33,49,.08);
-      border-radius:20px;
-      padding:18px;
-    }
-    .summary-item i{
-      width:19px;
-      height:19px;
-      color:var(--primary-dark);
-      margin-bottom:12px;
-    }
-    .summary-item strong{
-      display:block;
-      font-size:15px;
-      color:var(--ink);
-      font-weight:900;
-      margin-bottom:8px;
-    }
-    .summary-item p{
-      margin:0;
-      font-size:14px;
-      line-height:1.65;
-    }
-
     .reading-wrap{
       padding:30px 24px 36px;
-    }
-    .ebook-intro{
-      max-width:var(--reading);
-      margin:0 auto 26px;
-      background:linear-gradient(180deg, rgba(123,148,173,.12), rgba(255,255,255,.88));
-      border:1px solid rgba(18,33,49,.08);
-      border-radius:24px;
-      padding:24px;
-    }
-    .ebook-intro h3{
-      margin:0 0 8px;
-      color:var(--ink);
-      font-size:20px;
-      font-weight:900;
-      letter-spacing:-.03em;
-    }
-    .ebook-intro p{
-      margin:0;
-      font-size:15px;
-      line-height:1.8;
     }
 
     .chapter{
@@ -387,6 +234,7 @@
       overflow:hidden;
       box-shadow:0 12px 35px rgba(18,33,49,.06);
     }
+    .chapter:last-child{margin-bottom:0}
     .chapter-media{
       position:relative;
       overflow:hidden;
@@ -394,7 +242,6 @@
       border-bottom:1px solid rgba(18,33,49,.06);
       padding:18px;
     }
-    /* Standard container for chapter/inline images */
     .container-img{
       width:100%;
       min-height:280px;
@@ -420,7 +267,6 @@
     .container-img.focus-top img{
       object-position:center top;
     }
-    /* Cover image class for important artwork */
     .cover-img{
       width:100%;
       max-height:640px;
@@ -472,16 +318,6 @@
       margin-bottom:8px;
       font-size:15px;
       line-height:1.75;
-    }
-    .chapter-note{
-      margin-top:18px;
-      padding:16px 18px;
-      border-radius:18px;
-      background:var(--bg-soft);
-      border:1px solid rgba(18,33,49,.07);
-      font-size:14px;
-      line-height:1.7;
-      color:var(--ink);
     }
 
     .alert-grid{
@@ -597,7 +433,6 @@
       .hero{grid-template-columns:1fr}
       .cover-frame img{height:480px}
       .hero h1{max-width:unset}
-      .summary-grid{grid-template-columns:repeat(2,1fr)}
       .alert-grid{grid-template-columns:1fr}
     }
     @media (max-width: 760px){
@@ -605,14 +440,10 @@
       .topnav{display:none}
       .page{padding:14px 12px 54px}
       .hero,
-      .quick-summary,
       .section-shell,
       .cta-box{border-radius:24px}
       .hero{padding:18px}
-      .hero-meta,
-      .summary-grid,
       .checklist{grid-template-columns:1fr}
-      .section-head{padding:18px;flex-direction:column}
       .reading-wrap{padding:18px}
       .chapter-content{padding:20px}
       .chapter h3{font-size:24px}
@@ -633,7 +464,6 @@
       </a>
 
       <nav class="topnav" aria-label="Navegação do ebook">
-        <a class="pill" href="#visao-geral">Visão geral</a>
         <a class="pill" href="#conteudo">Capítulos</a>
         <a class="pill" href="#alertas">Alertas</a>
         <a class="pill primary" href="#checklist">Checklist final</a>
@@ -651,104 +481,17 @@
           Aqui você encontra os cuidados das primeiras 48 horas, a dieta branca, o manejo da sensibilidade,
           a rotina ideal de higiene e os sinais que merecem atenção profissional.
         </p>
-
-        <div class="hero-meta">
-          <div class="meta-card">
-            <i data-lucide="clock-3"></i>
-            <strong>Leitura rápida</strong>
-            <span>Conteúdo objetivo, elegante e fácil de aplicar no dia a dia do paciente.</span>
-          </div>
-          <div class="meta-card">
-            <i data-lucide="sparkles"></i>
-            <strong>Imagem premium</strong>
-            <span>Design limpo com cara de material pago, ideal para fortalecer a marca da clínica.</span>
-          </div>
-          <div class="meta-card">
-            <i data-lucide="shield-check"></i>
-            <strong>Orientação segura</strong>
-            <span>Informações organizadas para reduzir dúvidas e reforçar as recomendações do dentista.</span>
-          </div>
-        </div>
       </div>
 
       <div class="hero-visual">
         <div class="cover-frame">
           <img src="./img/capa.jpg" class="cover-img" alt="Capa do ebook Vitae sobre cuidados pós-clareamento dentário" loading="eager">
         </div>
-
-        <div class="seal">
-          <div>
-            <strong>Material de apoio ao paciente</strong>
-            <p>Uma apresentação com estética sofisticada para aumentar percepção de valor e profissionalismo.</p>
-          </div>
-          <div class="seal-badge" aria-hidden="true">
-            <i data-lucide="badge-check"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="visao-geral" class="quick-summary" aria-label="Resumo do ebook">
-      <div class="section-head">
-        <div>
-          <h2>O que o paciente vai aprender neste eBook</h2>
-          <p>
-            Estruturado como um material editorial, este conteúdo guia o leitor capítulo por capítulo e usa imagens
-            conectadas a cada tema para tornar a experiência mais profissional, mais leve e mais memorável.
-          </p>
-        </div>
-        <span class="section-kicker">Resumo visual</span>
-      </div>
-
-      <div class="summary-grid">
-        <article class="summary-item">
-          <i data-lucide="alarm-clock"></i>
-          <strong>Primeiras 48 horas</strong>
-          <p>Entenda por que esse período é decisivo para evitar manchas e desconfortos após o clareamento.</p>
-        </article>
-
-        <article class="summary-item">
-          <i data-lucide="apple"></i>
-          <strong>Dieta branca</strong>
-          <p>Veja quais alimentos e bebidas ajudam a preservar o resultado e quais devem ser evitados.</p>
-        </article>
-
-        <article class="summary-item">
-          <i data-lucide="tooth"></i>
-          <strong>Higiene e sensibilidade</strong>
-          <p>Aprenda a manter a rotina de higiene de forma suave, sem agredir esmalte, gengiva ou dentina.</p>
-        </article>
-
-        <article class="summary-item">
-          <i data-lucide="stethoscope"></i>
-          <strong>Sinais de alerta</strong>
-          <p>Saiba quando a sensibilidade é esperada e quando é hora de procurar avaliação do dentista.</p>
-        </article>
       </div>
     </section>
 
     <section id="conteudo" class="section-shell" aria-label="Conteúdo principal do ebook">
-      <div class="section-head">
-        <div>
-          <h2>Conteúdo principal</h2>
-          <p>
-            A leitura abaixo foi organizada em formato de eBook premium: uma narrativa clara, capítulos bem divididos,
-            blocos de destaque e imagens associadas a cada assunto para criar mais valor percebido.
-          </p>
-        </div>
-        <span class="section-kicker">Leitura guiada</span>
-      </div>
-
       <div class="reading-wrap">
-        <div class="ebook-intro">
-          <h3>Antes de começar</h3>
-          <p>
-            Após o clareamento dentário, é natural querer manter o resultado bonito pelo maior tempo possível.
-            Os cuidados logo após o procedimento fazem diferença direta no brilho, na estabilidade da cor e no conforto
-            do paciente. Por isso, seguir orientações simples nos primeiros dias ajuda muito a proteger o sorriso.
-          </p>
-        </div>
-
         <article class="chapter">
           <div class="chapter-media">
             <div class="container-img">
@@ -773,9 +516,6 @@
               <li>Não consuma alimentos muito quentes ou muito gelados se houver sensibilidade.</li>
               <li>Mantenha hidratação adequada e prefira refeições simples e leves nos primeiros dias.</li>
             </ul>
-            <div class="chapter-note">
-              <strong>Dica prática:</strong> quanto mais clara e neutra for a alimentação nesse início, maior a chance de preservar o resultado com mais uniformidade.
-            </div>
           </div>
         </article>
 
@@ -803,9 +543,6 @@
               <li>Evite alimentos com molhos escuros ou corantes intensos.</li>
               <li>Se houver dúvida, use uma regra simples: quanto mais claro o alimento, mais seguro tende a ser nesse período.</li>
             </ul>
-            <div class="chapter-note">
-              <strong>Orientação de valor:</strong> apresentar essa dieta de forma visual ao paciente aumenta adesão e reduz dúvidas após a consulta.
-            </div>
           </div>
         </article>
 
@@ -831,7 +568,7 @@
             <ul>
               <li>O café é um dos principais responsáveis por recidiva de manchas em pacientes com consumo frequente.</li>
               <li>Bebidas ácidas e geladas também podem piorar sensibilidade em quem está mais reativo.</li>
-              <li>Organizar essa orientação no eBook transmite autoridade e cuidado com os detalhes.</li>
+              <li>Reduzir a frequência já ajuda a preservar o resultado nas primeiras fases do pós-clareamento.</li>
             </ul>
           </div>
         </article>
@@ -878,33 +615,20 @@
             </p>
             <p>
               Uma medida simples é recomendar creme dental para dentes sensíveis quando houver sintomas, especialmente os
-              que contenham nitrato de potássio. Essa orientação fica ainda melhor quando explicada de forma objetiva no material.
+              que contenham nitrato de potássio. Essa orientação ajuda o paciente a lidar melhor com o desconforto sem
+              aumentar a ansiedade no pós-atendimento.
             </p>
             <ul>
               <li>Se houver fisgadas, pode ser indicado o uso de pasta para sensibilidade com nitrato de potássio.</li>
               <li>Se não houver desconforto, não existe necessidade obrigatória de usar esse tipo de creme dental.</li>
               <li>Persistência ou intensidade fora do esperado devem ser avaliadas pelo dentista.</li>
             </ul>
-            <div class="chapter-note">
-              <strong>Ponto importante:</strong> incluir essa explicação no eBook ajuda a diminuir mensagens repetidas no pós-atendimento e melhora a experiência do paciente.
-            </div>
           </div>
         </article>
       </div>
     </section>
 
     <section id="alertas" class="section-shell" aria-label="Alertas importantes">
-      <div class="section-head">
-        <div>
-          <h2>Alertas e orientações importantes</h2>
-          <p>
-            Esta seção reforça temas que costumam gerar dúvidas e acrescenta um tom mais consultivo ao material,
-            deixando o eBook com cara de conteúdo premium e estrategicamente útil para a clínica.
-          </p>
-        </div>
-        <span class="section-kicker">Pontos de atenção</span>
-      </div>
-
       <div class="alert-grid">
         <article class="alert-card featured">
           <i data-lucide="cigarette"></i>
@@ -916,7 +640,7 @@
           <ul>
             <li>Quanto menor o consumo nesse período, melhor para preservar a estética do resultado.</li>
             <li>O hábito também pode intensificar sensibilidade e desconforto em alguns pacientes.</li>
-            <li>Reforçar esse ponto no eBook aumenta percepção de seriedade e cuidado clínico.</li>
+            <li>Evitar o cigarro nesse período ajuda a manter o clareamento por mais tempo.</li>
           </ul>
         </article>
 
@@ -950,16 +674,6 @@
     </section>
 
     <section id="checklist" class="section-shell" aria-label="Checklist final">
-      <div class="section-head">
-        <div>
-          <h2>CHECKLIST</h2>
-          <p>
-            
-          </p>
-        </div>
-        <span class="section-kicker">Resumo prático</span>
-      </div>
-
       <div class="checklist">
         <article class="check-block ok">
           <h3><i data-lucide="check-circle-2"></i> Faça isso</h3>
@@ -1017,4 +731,4 @@
     });
   </script>
 </body>
-</html> 
+</html>
